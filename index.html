@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    
+    <!-- wrapper -->
+    <div class="w-[100vw] h-[100vh] flex flex-col items-center justify-center  gap-10">
+        <img src="bg.jpg" alt="img" class="fixed h-full w-full drop-shadow-lg" />
+        <!--heading-->
+        <div class=" w-[80%] md:w-[30%] h-[40%] md:h-[50%] border-4 border-black z-10 relative">
+        <div class="text-white animate-pulse drop-shadow-lg text-center py-4 font-bold uppercase text-[18px] w-[9rem] m-auto  md:w-full md:text-[20px] "><span class="font-extrabold text-green-500">Increment</span> And <span class="font-extrabold text-red-600">Decrement</span></div>
+
+        <!--secondary wrapper-->
+        <div class=" flex justify-center bg-black items-center absolute top-40 left-9 md:top-28 left-16 md:left-[4.5rem] text-[25px] text-blue-900 rounded-sm gap-12 p-3 px-5">
+
+            <!-- negative buttton -->
+            <button onclick="decrement()" class="border-r-2 border-[#bfbfbf] pr-5">
+                <i class="fa-solid fa-minus text-green-500"></i>
+            </button>
+
+            <div id="counter" class="font-bold text-white">0</div>
+
+            <!-- positive button -->
+            <button onclick="increment()" class="border-l-2 border-[#bfbfbf] pl-5">
+                <i class="fa-solid fa-plus text-red-500"></i>
+            </button>
+
+        </div>
+    </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
